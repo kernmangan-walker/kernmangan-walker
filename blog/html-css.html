@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
-    <title>Kern Mangan-Walker notes</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>CSS Positioning</title>
     <link rel="shortcut icon" type="image/jpg" href="https://static.thenounproject.com/png/469934-200.png"/>
   </head>
   <body>
@@ -23,32 +23,25 @@
         <!-- Start main area-->
         <div class="absolute inset-0 px-6 lg:px-40 py-6 lg:py-24">
           <div class="h-full space-y-4 text-gray-800">
-            <h1 class="text-lg leading-6 font-medium">About me</h1>
+            <h1 class="text-lg leading-6 font-medium">Difference between Relative, Absolute and Fixed Positioning</h1>
             <p class="text-xs leading-6 text-gray-500 font-light">
-              Last updated: 23 November 2021
+              Last updated: 25 November 2021
             </p>
 <p class="text-sm leading-6 font-normal">
- <h1> Hello there! I'm Kern Mangan-Walker,</h1> </p>
-              
-              <body>
-                
-                <p>
-                  I'm currently based out of Whakatane. I moved here for the sunshine, the surf, epic walks and the quietness while I study over the summer months. It's been a wild time this past year but I'm so pleased to be part of this epic learning community.
-                  <br>
-                  <br>
-                  Currently I co-lead a couple of businesses (post-consumer plastic recycling & manufacturing + early learning hardware tech) where coding (Javascript, React) is fairly crucial but have previously worked with outsourcing agencies where things haven't gone as smoothly as our team would have liked. I'm keen to build up my coding knowledge experience so I can do more of the development myself as well as being able to work more closely and effectively with any external dev agencies that we may work with. Generally, I'm also in love with the Kaupapa of Dev Academy and feel there is so much within the course that will help me to learn and grow as a person as well as becoming a developer.
-                  <br>
-                  <br>
-                  Some of my favourite things include: 
-                  <br>
-                  <br>
-                  Great conversations, good friendships, surfing, bike rides, drawing, listening to music, looking at the stars, brainstorming ideas, reading/writing, hiking and spending time with animals.
-                  <br>
-                  <br>
-                  
-
-<center><img style = "width: 20%; height: 20%; hello; " src="https://pantograph-punch.com/derivations/image/fill/320/400/eyJpZCI6ImltYWdlLzExNi9hdHRhY2htZW50LzUyZWM5OTU1YzFiMjhiMGIxNjc0NmQzNDA3ZjAzMzdlLmpwZyIsInN0b3JhZ2UiOiJzdG9yZSJ9?signature=cce99ca22f0a4d888cd2dbf037af668552369a4a3ca828c4b4bf5443f8d21abb"  alt="It's me"  /> </center>
+    <center><img style = "width: 50%; height: 50%; hello; " src="https://miro.medium.com/max/1400/1*3nHXvVEEbQziTats5DlZOA.png"  alt="Illustration of positioning"  /> </center>            
+<h1><b>Absolute</h1></b>
+    This is a type of positioning that allows you to place any page element precisely where you want it. You use the positioning attributes top, left, bottom, and right to set the location. Remember that these values will be relative to the next parent element with relative (or absolute) positioning. If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relative to the page itself.
+    The most important thing about absolute positioning is that these elements are removed from the flow of elements on the page. An element with this type of positioning is not affected by other elements and it doesn’t affect other elements. This means that use of this sort of positioning can limit the flexability and interoperability of your page.
 <br>
+<br>
+<h1><b>Relative</h1></b>
+A relative element is positioned relative to its normal position. This element will be adjusted away from its default position on the page if its top, right, bottom, and left properties are set. Any gaps left by the element will not be filled with other content.
+<br>
+<br>
+<h1><b>Fixed</h1></b>
+A fixed position element is one that is positioned relative to the viewport, or the browser window. The viewport does not change when the window is scrolled, so a fixed positioned element will remain where it is as the page scrolls.
+You may use this for something like a navigation bar that needs to remain visible regardless of where the page is scrolled. The challenge with fixed positioning is that it may overlap other content, making it inaccessible - something to consider when making the most of this element type.
+
 <br>
 <br>
 
@@ -115,19 +108,19 @@
                   </div>
                   <ul role="list" class="relative z-0 divide-y divide-gray-200">
                     <a href="https://kernmangan-walker.github.io/">
-                      <li class="bg-blue-50 border-b">
-                        <div
-                          class="
-                            relative
-                            px-6
-                            py-5
-                            flex
-                            border-blue-600 border-l-2
-                            items-center
-                            space-x-3
-                            border-l-6
-                          "
-                        >
+                        <li class="border-b">
+                            <div
+                              class="
+                                relative
+                                px-6
+                                py-5
+                                flex
+                                items-center
+                                hover:bg-gray-50
+                                space-x-3
+                                border-l-6
+                              "
+                            >
                           <div class="flex-1 min-w-0">
                             <div class="focus:outline-none space-y-1">
                               <!-- Extend touch target to entire panel -->
@@ -147,19 +140,19 @@
                       </li>
                     </a>
                     <a href="https://kernmangan-walker.github.io/blog/html-css">
-                      <li class="border-b">
-                        <div
-                          class="
-                            relative
-                            px-6
-                            py-5
-                            flex
-                            items-center
-                            hover:bg-gray-50
-                            space-x-3
-                            border-l-6
-                          "
-                        >
+                        <li class="bg-blue-50 border-b">
+                            <div
+                              class="
+                                relative
+                                px-6
+                                py-5
+                                flex
+                                border-blue-600 border-l-2
+                                items-center
+                                space-x-3
+                                border-l-6
+                              "
+                            >
                           <div class="flex-1 min-w-0">
                             <div class="focus:outline-none space-y-1">
                               <!-- Extend touch target to entire panel -->
