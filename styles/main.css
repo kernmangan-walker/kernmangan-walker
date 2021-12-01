@@ -82,7 +82,8 @@ Grouping content
 hr {
   height: 0;
   /* 1 */
-  color: inherit;
+  color: inhert
+;
   /* 2 */
 }
 
@@ -385,7 +386,7 @@ html {
  */
 
 body {
-  font-family: inherit;
+  font-family: monospace;
   line-height: inherit;
 }
 
